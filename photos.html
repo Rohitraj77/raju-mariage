@@ -1,0 +1,120 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      body {
+        background-image: linear-gradient(to right, #a18cd1, #fbc2eb);
+        margin: 0;
+        padding: 0;
+      }
+
+      .carousel-item img {
+        max-height: 600px;     /* desktop max height */
+        max-width: 90%;        /* don’t go outside screen */
+        width: auto;
+        height: auto;
+        margin: 0 auto;        /* center horizontally */
+        display: block;
+        object-fit: contain;
+        padding-top: 20px;
+      }
+
+      /* 📱 Mobile adjustments */
+      @media (max-width: 768px) {
+        .carousel-item img {
+          max-height: 300px;   /* reduce height for small screens */
+          max-width: 100%;
+          padding-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="2pic.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="1pic.jpg" alt="...">  
+        </div>
+        <div class="carousel-item">
+          <img src="3pic.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="4pic.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="5pic.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="6pic.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="7pic.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="8pic.jpg" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

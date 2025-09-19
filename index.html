@@ -1,0 +1,216 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raju Wedding</title>
+  <style>
+    /* Navbar */
+    .navbar {
+      background-image: linear-gradient(#F5D2D2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar-a,
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    img {
+      height: 180px;
+      max-width: 100%;
+      mix-blend-mode: multiply;
+    }
+
+    a {
+      text-decoration: none;
+      color: darkblue;
+      font-size: 20px;
+      padding: 8px;
+    }
+
+    /* After nav */
+    .after-nav {
+      background-image: linear-gradient(#F8F7BA);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .after-nav img {
+      height: 200px;
+      max-width: 100%;
+      mix-blend-mode: multiply;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: darkblue;
+      margin-top: 10px;
+    }
+
+    /* Green section */
+    .green {
+      background-image: linear-gradient(#BDE3C3);
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 20px;
+      min-height: auto;
+      flex-wrap: wrap;
+    }
+
+    .green > img {
+      height: 300px;
+      width: auto;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    /* Engagement text */
+    .engagement-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .engagement-wrap h2 {
+      margin: 0;
+      color: darkblue;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+
+    .engagement-box {
+      max-width: 420px;
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      border: 2px solid black;
+      background: #A3CCDA;
+      line-height: 1.45;
+    }
+
+    /* 📱 Mobile adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+      .navbar-a {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      .after-nav {
+        flex-direction: column;
+      }
+      .after-nav img {
+        height: 150px;
+      }
+      .green {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .engagement-wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .engagement-box {
+        max-width: 90%;
+      }
+      img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="img">
+      <img src="logo.png" alt="logo">
+    </div>
+    <div class="navbar-a">
+      <a href="home.html">Home</a>
+      <a href="photos.html">Photos</a>
+      <a href="video.html">Video</a>
+    </div>
+  </div>
+
+  <!-- After Navbar Section -->
+  <div class="after-nav">
+    <marquee>
+      <img src="bw.jpg" alt="pic">
+      <h3>CONGRATULATIONS</h3>
+    </marquee>
+  </div>
+
+  <!-- Engagement Section -->
+  <div class="green">
+    <img src="flower.jpg" alt="flower">
+
+    <div class="engagement-wrap">
+      <h2>ENGAGEMENT :-</h2>
+      <div class="engagement-box">
+        <p>
+          "Save the Date – With hearts full of love and dreams for tomorrow,
+          Rahul Raj M and Nisarga warmly invite you to join them in celebrating the sacred beginning
+          of their journey together. On the 28th of November 2025, at the beautiful town of Arasikere,
+          their engagement ceremony will be held, marking the promise of a lifetime filled with love, joy,
+          and togetherness. Your presence will make this day even more memorable as they step into
+          a new chapter of their lives."
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

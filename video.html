@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <style>
+
+    *{
+        background-image: linear-gradient(to right, #a18cd1, #fbc2eb);
+    }
+        /* Container styling */
+.container {
+  max-width: 800px;   /* limit video width */
+  margin: 40px auto;  /* center horizontally */
+  padding: 15px;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb); /* gradient background */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Video styling */
+video {
+  border-radius: 10px;   /* rounded corners */
+  outline: none;         /* remove focus outline */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Optional: hover effect */
+video:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container my-4">
+  <div class="ratio ratio-16x9">
+    <video controls>
+      <source src="eating.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+</body>
+</html>
