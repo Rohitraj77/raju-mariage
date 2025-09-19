@@ -1,37 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,28 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raju Wedding</title>
   <style>
-    /* Navbar */
     .navbar {
+      
       background-image: linear-gradient(#F5D2D2);
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      height: auto;
-      padding: 10px 20px;
-      flex-wrap: wrap;
+      height: 100px;
     }
 
     .navbar-a,
     .img {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-      flex: 1;
+      height: 100px;
+      width: 400px;
     }
 
     img {
-      height: 180px;
-      max-width: 100%;
+      height: 225px;
       mix-blend-mode: multiply;
     }
 
@@ -68,96 +31,79 @@
       text-decoration: none;
       color: darkblue;
       font-size: 20px;
-      padding: 8px;
     }
 
-    /* After nav */
     .after-nav {
+      
       background-image: linear-gradient(#F8F7BA);
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
+      height: 400px;
       align-items: center;
-      height: auto;
-      padding: 15px;
-      text-align: center;
     }
 
     .after-nav img {
-      height: 200px;
-      max-width: 100%;
+      height: 300px;
       mix-blend-mode: multiply;
-      margin-bottom: 10px;
+    }
+
+    .after-nav img:hover {
+      border-bottom: 1px solid blue;
+      color: black;
     }
 
     h3 {
+      padding-left: 20px;
       color: darkblue;
-      margin-top: 10px;
     }
 
-    /* Green section */
     .green {
+      
       background-image: linear-gradient(#BDE3C3);
       display: flex;
-      align-items: flex-start;
-      gap: 30px;
+      align-items: flex-start;   /* align content from top */
+      gap: 30px;                 /* spacing between flower and text content */
       padding: 20px;
-      min-height: auto;
-      flex-wrap: wrap;
+      min-height: 500px;
     }
 
     .green > img {
-      height: 300px;
+      height: 420px;  /* adjust flower image size */
       width: auto;
-      max-width: 100%;
       object-fit: cover;
     }
 
-    /* Engagement text */
+    /* container for heading + box */
     .engagement-wrap {
       display: flex;
-      flex-direction: row;
+      flex-direction: row;   /* heading + box side by side */
       gap: 20px;
       align-items: flex-start;
-      flex-wrap: wrap;
     }
 
     .engagement-wrap h2 {
       margin: 0;
+      padding: 0;
       color: darkblue;
-      font-size: 24px;
       text-decoration: underline;
+      font-size: 28px;
+      white-space: nowrap;
     }
 
     .engagement-box {
       max-width: 420px;
-      width: 100%;
       padding: 15px;
-      margin-top: 20px;
+      margin-top: 80px;
       border: 2px solid black;
       background: #A3CCDA;
       line-height: 1.45;
     }
 
-    /* 📱 Mobile adjustments */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        text-align: center;
-      }
-      .navbar-a {
-        flex-direction: column;
-        margin-top: 10px;
-      }
-      .after-nav {
-        flex-direction: column;
-      }
-      .after-nav img {
-        height: 150px;
-      }
+    /* responsive stacking */
+    @media (max-width: 800px) {
       .green {
         flex-direction: column;
         align-items: center;
-        text-align: center;
       }
       .engagement-wrap {
         flex-direction: column;
@@ -167,26 +113,21 @@
       .engagement-box {
         max-width: 90%;
       }
-      img {
-        height: auto;
-      }
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
   <div class="navbar">
     <div class="img">
       <img src="logo.png" alt="logo">
     </div>
     <div class="navbar-a">
-      <a href="home.html">Home</a>
-      <a href="photos.html">Photos</a>
-      <a href="video.html">Video</a>
+      <a href="home.html">Home</a>&nbsp;&nbsp;
+      <a href="photos.html">Photos</a>&nbsp;&nbsp;
+      <a href="video.html">Video</a>&nbsp;&nbsp;
     </div>
   </div>
 
-  <!-- After Navbar Section -->
   <div class="after-nav">
     <marquee>
       <img src="bw.jpg" alt="pic">
@@ -194,12 +135,11 @@
     </marquee>
   </div>
 
-  <!-- Engagement Section -->
   <div class="green">
     <img src="flower.jpg" alt="flower">
 
     <div class="engagement-wrap">
-      <h2>ENGAGEMENT :-</h2>
+      <h2><u>ENGAGEMENT</u>:-</h2>
       <div class="engagement-box">
         <p>
           "Save the Date – With hearts full of love and dreams for tomorrow,
