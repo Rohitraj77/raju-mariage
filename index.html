@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raju Wedding</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
     .navbar {
-      
       background-image: linear-gradient(#F5D2D2);
       display: flex;
       justify-content: space-between;
       height: 100px;
+      align-items: center;
+      padding: 0 20px;
     }
 
     .navbar-a,
@@ -19,7 +27,6 @@
       justify-content: space-evenly;
       align-items: center;
       height: 100px;
-      width: 400px;
     }
 
     img {
@@ -31,15 +38,17 @@
       text-decoration: none;
       color: darkblue;
       font-size: 20px;
+      padding: 0 10px;
     }
 
+    /* After Navbar */
     .after-nav {
-      
       background-image: linear-gradient(#F8F7BA);
       display: flex;
-      justify-content: space-evenly;
-      height: 400px;
+      justify-content: center;
       align-items: center;
+      height: 400px;
+      text-align: center;
     }
 
     .after-nav img {
@@ -57,28 +66,30 @@
       color: darkblue;
     }
 
+    /* Green Section */
     .green {
-      
       background-image: linear-gradient(#BDE3C3);
       display: flex;
-      align-items: flex-start;   /* align content from top */
-      gap: 30px;                 /* spacing between flower and text content */
+      align-items: flex-start;
+      gap: 30px;
       padding: 20px;
-      min-height: 500px;
+      min-height: 100vh;   /* Full viewport height */
+      width: 100%;         /* Full width */
     }
 
     .green > img {
-      height: 420px;  /* adjust flower image size */
+      height: 420px;
       width: auto;
       object-fit: cover;
     }
 
-    /* container for heading + box */
+    /* Engagement container */
     .engagement-wrap {
       display: flex;
-      flex-direction: row;   /* heading + box side by side */
+      flex-direction: row;
       gap: 20px;
       align-items: flex-start;
+      flex-wrap: wrap;
     }
 
     .engagement-wrap h2 {
@@ -93,22 +104,22 @@
     .engagement-box {
       max-width: 420px;
       padding: 15px;
-      margin-top: 80px;
+      margin-top: 20px;
       border: 2px solid black;
       background: #A3CCDA;
       line-height: 1.45;
     }
 
-    /* responsive stacking */
+    /* 📱 Responsive adjustments */
     @media (max-width: 800px) {
       .green {
         flex-direction: column;
         align-items: center;
+        text-align: center;
       }
       .engagement-wrap {
         flex-direction: column;
         align-items: center;
-        text-align: center;
       }
       .engagement-box {
         max-width: 90%;
@@ -117,17 +128,19 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <div class="navbar">
     <div class="img">
       <img src="logo.png" alt="logo">
     </div>
     <div class="navbar-a">
-      <a href="home.html">Home</a>&nbsp;&nbsp;
-      <a href="photos.html">Photos</a>&nbsp;&nbsp;
-      <a href="video.html">Video</a>&nbsp;&nbsp;
+      <a href="home.html">Home</a>
+      <a href="photos.html">Photos</a>
+      <a href="video.html">Video</a>
     </div>
   </div>
 
+  <!-- After Navbar -->
   <div class="after-nav">
     <marquee>
       <img src="bw.jpg" alt="pic">
@@ -135,11 +148,12 @@
     </marquee>
   </div>
 
+  <!-- Green Section -->
   <div class="green">
     <img src="flower.jpg" alt="flower">
 
     <div class="engagement-wrap">
-      <h2><u>ENGAGEMENT</u>:-</h2>
+      <h2>ENGAGEMENT :-</h2>
       <div class="engagement-box">
         <p>
           "Save the Date – With hearts full of love and dreams for tomorrow,
@@ -149,9 +163,8 @@
           and togetherness. Your presence will make this day even more memorable as they step into
           a new chapter of their lives."
         </p>
-      
-    
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
